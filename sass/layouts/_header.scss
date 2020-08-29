@@ -1,0 +1,32 @@
+%display {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  @extend %display;
+  justify-content: flex-start;
+  border-bottom: 1px solid #ececec;
+}
+
+.auth-nav {
+  margin-left: auto;
+}
+.contacts {
+  @extend %display;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $text-color;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

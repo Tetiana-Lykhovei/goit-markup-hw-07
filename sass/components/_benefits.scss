@@ -1,0 +1,28 @@
+.benefits {
+  display: flex;
+  justify-content: center;
+}
+
+.benefits-list {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  margin-top: 94px;
+
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
+.thumbs {
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  margin-right: 0px;
+  border-radius: 4px;
+
+  &-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #f5f4fa;
+    padding: 25px 100px;
+  }
+}

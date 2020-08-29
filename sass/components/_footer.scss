@@ -1,0 +1,53 @@
+%font-details {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+footer {
+  background: #2f303a;
+}
+.footer-nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.adress {
+  @extend %font-details;
+  flex-wrap: wrap;
+  width: 231px;
+  font-style: normal;
+  color: $white-text-color;
+  margin-right: 70px;
+}
+.to-reach {
+  @extend %font-details;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-us {
+  display: block;
+  margin-left: 93px;
+}
+
+.footer-form {
+  position: absolute;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mail-us.footer-form::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
